@@ -32,8 +32,9 @@ public class Main {
                 int a = sc.nextInt();
                 int b = sc.nextInt();
                 for(int k=a-1; k<b; k++) {
-                    System.out.printf(arr[k] + " ");
+                    System.out.printf(arr[k] + " " );  
                 }
+                System.out.println();
             }
         }
     }
