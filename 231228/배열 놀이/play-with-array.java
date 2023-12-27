@@ -24,6 +24,7 @@ public class Main {
                 for(int l = 0; l<n; l++) {
                     if(k == arr[l]) {
                         index = l+1;
+                        break;
                     }
                 }
                 System.out.println(index);
