@@ -15,14 +15,16 @@ public class Main {
             A[i] = sc.nextInt();
         }
         for(int j=0; j<b; j++) {
-            B[j] = sc.nextInt();
-            for(int k=0; k<a; k++){
-                if(A[k] == B[j])
-                cnt++;
-            }
-            
+            B[j] = sc.nextInt();            
         }
-        if(cnt == B.length) {
+        for(int k=0; k<a; k++){
+            for(int q=0; q<b; q++) {
+                if(A[k+q] == B[q])
+                cnt++;
+            } 
+        }
+
+        if(cnt >= b) {
             System.out.println("Yes");
         } else {
             System.out.println("No");
