@@ -6,7 +6,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int[] A = new int[100];
         int[] B = new int[100];
-        int cnt = 0;
 
         int a = sc.nextInt();
         int b = sc.nextInt();
@@ -17,17 +16,26 @@ public class Main {
         for(int j=0; j<b; j++) {
             B[j] = sc.nextInt();            
         }
+
         for(int k=0; k<a; k++){
+            boolean success = true;
+
             for(int q=0; q<b; q++) {
-                if(A[k+q] == B[q])
-                cnt++;
+                if(k+q>a){
+                    success = false;
+                    break;
+                }
+                if(A[k+q] != B[q]) {
+                    success = false;
+                    break;
+                }
             } 
+            if(success) {
+            System.out.println("Yes");
+            System.exit(0);
+            }
         }
 
-        if(cnt >= b) {
-            System.out.println("Yes");
-        } else {
-            System.out.println("No");
-        }   
+        System.out.println("No");
     }
 }
