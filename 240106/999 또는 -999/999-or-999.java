@@ -14,10 +14,10 @@ public class Main {
             if(N[i] == 999 || N[i] == -999) {
                 break;
             }
-            if(max <= N[i]) {
+            if(max < N[i]) {
                 max = N[i];
             }
-            else if(min >= N[i]) {
+            else if(min > N[i]) {
                 min = N[i];
             }
         }
