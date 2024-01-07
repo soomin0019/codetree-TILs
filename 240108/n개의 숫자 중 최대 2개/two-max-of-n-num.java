@@ -12,9 +12,9 @@ public class Main {
             N[i] = sc.nextInt();
         }
 
-        int fMax = 0;
+        int fMax = Integer.MIN_VALUE;
         int indexFMax=0;
-        int sMax = 0;
+        int sMax = Integer.MIN_VALUE;
         for(int i=0; i<n; i++) {
             if(N[i] > fMax) {
                 fMax = N[i];
