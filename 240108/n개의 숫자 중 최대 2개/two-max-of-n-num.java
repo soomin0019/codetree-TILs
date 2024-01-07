@@ -13,14 +13,16 @@ public class Main {
         }
 
         int fMax = 0;
+        int indexFMax=0;
         int sMax = 0;
         for(int i=0; i<n; i++) {
             if(N[i] > fMax) {
                 fMax = N[i];
+                indexFMax = i;
             }
         }
         for(int i=0; i<n; i++) {
-            if(N[i] == fMax) continue;
+            if(N[i] == N[indexFMax]) continue;
             if(N[i] > sMax) {
                 sMax = N[i];
             }
