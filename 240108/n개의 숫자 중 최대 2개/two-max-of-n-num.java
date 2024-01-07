@@ -22,7 +22,7 @@ public class Main {
             }
         }
         for(int i=0; i<n; i++) {
-            if(N[i] == N[indexFMax]) continue;
+            if(i == indexFMax) continue;
             if(N[i] > sMax) {
                 sMax = N[i];
             }
