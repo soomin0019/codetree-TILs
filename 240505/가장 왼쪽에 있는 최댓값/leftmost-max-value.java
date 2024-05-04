@@ -19,7 +19,7 @@ public class Main {
                 if(a[i]> a[midx])
                     midx = i;
             }
-            System.out.println((midx+1) + " ");
+            System.out.printf((midx+1) + " ");
 
             if(midx == 0) {
                 break;
